@@ -19,6 +19,10 @@ body {
     border: 5px solid #243b67;
 }
 
+.myHobbies {
+    background-color: #c27dfc;
+}
+
 .img-thumbnail1 {
     width: fit-content;
     max-width: 180px;
@@ -47,6 +51,50 @@ hr {
 
 section {
     min-height: 750px;
+}
+
+.card-game {
+    background-color: #daa520;
+    height: 70px;
+    background-position: center;
+    background-size: 130% auto;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    transition: box-shadow .2s;
+    box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%), 0 4px 5px 0 rgb(0 0 0 / 6%), 0 2px 4px 0 rgb(0 0 0 / 7%);
+}
+
+.card-info-1 {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    background-color: #F2AAD4;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 3px;
+    width: 100%;
+}
+
+.card-info-2 {
+    overflow: hidden;
+    position: relative;
+    word-break: break-all;
+    height: 1.5em;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
 }
 
 .portfolio {
@@ -79,6 +127,58 @@ footer p {
     font-size: 0.9em;
 }
 
+@media (min-width: 768px) {
+    .box-game {
+        width: 150px !important;
+        margin: 15px !important;
+    }
+    input[type=radio]:checked+label {
+        width: 215px;
+        font-size: 14px;
+        padding: 5px;
+    }
+    input[type=radio]+label {
+        width: 215px;
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .box-game {
+        width: 150px;
+        margin: 15px;
+    }
+    input[type=radio]:checked+label {
+        width: 191px;
+        font-size: 14px;
+        padding: 5px;
+    }
+    input[type=radio]+label {
+        width: 191px;
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .box-game {
+        width: 150px;
+        height: 200px;
+        margin: 15px;
+    }
+    input[type=radio]:checked+label {
+        width: 172px;
+        font-size: 14px;
+        padding: 5px;
+    }
+    input[type=radio]+label {
+        width: 172px;
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
 .card {
     width: 300px;
     height: 250px;
@@ -86,6 +186,12 @@ footer p {
     border-radius: 15px;
     border-color: #c27dfc;
     background-color: transparent;
+}
+
+.box-game {
+    margin: 4px;
+    height: 120px;
+    width: 120px;
 }
 
 .ftco-love {
